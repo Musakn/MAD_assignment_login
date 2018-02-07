@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="My_photo">My Photo</string>
+    <string name="Next_Button">Next</string>
+    <string name="EditText_Alumb">Enter Something</string>
+    <string name="CheckBox_forCheck">Do you agree</string>
+    <string name="Female">Female</string>
+    <string name="Male">Male</string>
+    <string name="Auto">Auto Backup Photo</string>
+    <string name="Search">Search something</string>
+</resources>

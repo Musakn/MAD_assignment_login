@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6FA"
+    tools:context="com.example.msaleemkhan.assignment.MainActivity">
+
+
+
+    <SearchView
+        android:id="@+id/search_viewr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="@string/Search"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_text_view"
+        android:text="@string/My_photo"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#0000FF"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+       />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/photo_image_view"
+        android:scaleType="centerCrop"
+        android:src="@drawable/images"
+        android:layout_gravity="center" />
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/album_description_view"
+        android:hint="@string/EditText_Alumb"
+        android:textColor="@color/colorPrimary"
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="20dp"/>
+
+    <Spinner
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sort_by_spinner"
+        android:layout_marginLeft="20dp"/>
+
+    <CheckBox
+        android:id="@+id/notify_me_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CheckBox_forCheck"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="20dp"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/yes_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Female"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="?android:textAppearanceMedium" />
+        <RadioButton  android:id="@+id/no_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Male"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="?android:textAppearanceMedium" />
+    </RadioGroup>
+
+    <RatingBar
+
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/rating_bar"
+        android:numStars="5"
+        android:rating="2.5"
+        android:stepSize="0.5" />
+
+    <Switch
+        android:id="@+id/backup_photos_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/Auto"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:max="100"
+        android:progress="20" />
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loading_spinner"
+        style="?android:progressBarStyle"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:layout_marginLeft="20dp"
+        android:max="100"
+        android:progress="40"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/next_button"
+        android:text="@string/Next_Button"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="10dp"/>
+</LinearLayout>
